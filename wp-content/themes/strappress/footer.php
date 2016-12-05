@@ -42,8 +42,8 @@
             <?php } ?>
           </div><!-- end of col-lg-6 -->
 
-          <div class="col-lg-6">
-      <?php if( bi_option('disable_social_footer') == '1') { ?>     
+        <div class="col-lg-6">
+          <?php if( bi_option('disable_social_footer') == '1') { ?>     
             <div class="social-icons">
                 <?php $social_options = bi_option( 'social_icons' ); ?>
                     <?php foreach ( $social_options as $key => $value ) {
@@ -79,10 +79,10 @@
             <?php if( bi_option('custom_power') ) : ?>
         <?php echo bi_option('custom_power'); ?>
       <?php else : ?>
-               <a href="<?php echo esc_url(__('http://strappress.com','responsive')); ?>" title="<?php esc_attr_e('StrapPress', 'responsive'); ?>">
-          <?php printf('StrapPress'); ?></a>
-          developed by <a href="<?php echo esc_url(__('http://bragthemes.com','responsive')); ?>" title="<?php esc_attr_e('Brag Themes', 'responsive'); ?>">
-          <?php printf('Brag Themes'); ?></a>
+               
+          <?php printf('Code Test for Incredible Marketing'); ?></a>
+          by <a href="http://tessakriesel.com">
+          <?php printf('Tessa Kriesel'); ?></a>
             <?php endif; ?>
           
         </div><!-- end .powered -->
