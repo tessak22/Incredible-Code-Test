@@ -439,3 +439,8 @@ function responsive_breadcrumb_lists() {
 	
     add_action('widgets_init', 'responsive_widgets_init');
 ?>
+
+<?php // Custom Functions written for Code Test
+    add_filter('show_admin_bar', '__return_false');  // hide admin bar on the front side of website
+
+?>
