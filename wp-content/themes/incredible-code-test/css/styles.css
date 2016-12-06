@@ -1,0 +1,29 @@
+/* Theme Specific CSS */
+body {font-family: 'Open Sans', sans-serif; font-size: 18px;}
+
+.site-header {padding: 50px 0 170px; background-repeat: no-repeat; background-position: top left;}
+.site-header .container-fluid {position: relative;}
+/*Custom Site Headers*/
+.home .site-header {background-image: url('../images/body-bg.png'), url('../images/homepage-banner.jpg');}
+/* End of Custom Site Headers */
+.logo {position: relative; left: 60px;}
+.header-contact {position: relative; right: 65px; padding-right: 0; color: #fff;}
+.header-contact:after {width: 94%; height: 1px; background-color: #fff; display: block; content: ""; position: absolute; right: 0; bottom: -40px;}
+.header-contact a {color: #fff;}
+.header-contact a:hover {color: #BAD5EB; text-decoration: none;}
+.social {list-style: none; float: right;}
+.social li {display: inline-block; font-size: 23px; padding: 0 6px;}
+.social li:last-child {padding-right: 0;}
+.social li a {border: 2px solid #fff; border-radius: 50%; width: 43px; height: 43px; display: block;}
+.social li a:hover {border-color: #BAD5EB;}
+.social li a i {position: relative; left: 10px; top: 3px;}
+.social li a i.fa-facebook {left: 12px;}
+.social li a i.fa-twitter {left: 9px;}
+.social li a i.fa-youtube-play {left: 8px;}
+.social li a i.fa-linkedin {top: 2px;}
+.social li a i.fa-instagram {left: 9px;}
+.header-contact p {float: right; font-size: 0.944em; letter-spacing: 0.05em; clear: right;}
+.header-contact p span {padding: 0 5px;}
+
+/* Navigation */
+.telephone {background: #b88886;}

@@ -13,14 +13,11 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'incredible-code-test' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'incredible-code-test' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'incredible-code-test' ), 'incredible-code-test', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer class="site-footer" >
+		<div class="container">
+			Footer Stuff Here
+		</div><!-- .container -->
+	</footer>
 
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

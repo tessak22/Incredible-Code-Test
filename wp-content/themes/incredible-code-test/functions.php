@@ -139,7 +139,15 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-// Custom Functions
+// CUSTOM FUNCTIONS ADDED
 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
+
+//Add Options from Advanced Custom Fields
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
+// hide admin bar on the front side of website
+    add_filter('show_admin_bar', '__return_false');  
