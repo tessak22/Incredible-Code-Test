@@ -24,7 +24,7 @@
 <!-- Font Awesome -->
 <script src="https://use.fontawesome.com/53a0e731d4.js"></script>
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,7 +33,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="logo col-md-2">
-					<img src="<?php the_field('logo', 'option'); ?>">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php the_field('logo', 'option'); ?>"></a>
 				</div>
 				<div class="header-contact col-md-10 pull-right">
 					<ul class="social">
@@ -46,10 +46,31 @@
 					<p><a href="mailto:<?php the_field('contact_email', 'option'); ?>"><?php the_field('contact_email', 'option'); ?></a> <span>|</span> <a href="tel:<?php the_field('contact_phone', 'option'); ?>"><?php the_field('contact_phone', 'option'); ?></a></p>
 				</div>
 			</div>
+			<div class="row">
+				<?php if(is_front_page() == true ): ?>
+					<div class="homepage-hero pull-right">
+						<h2>Melbourne's</h2>
+						<h1>Body Contouring</h1>
+						<h3>Specialist</h3>
+						<?php if(get_field('call_to_action_button')): ?>
+							<a class="btn btn-primary" href="<?php the_field('call_to_action_button_url'); ?>"><?php the_field('call_to_action_button'); ?></a>
+						<?php endif; ?>
+						<?php if(get_field('secondary_call_to_action_button')): ?>
+							<a class="btn btn-default" href="<?php the_field('secondary_call_to_action_button_url'); ?>"><?php the_field('secondary_call_to_action_button'); ?></a>
+						<?php endif; ?>
+						<div class="continue">
+							<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/images/chevron.png"></a>
+						</div>
+					</div>
+				<?php endif; ?>
+				<?php if(is_front_page() == false ): ?>
+					<h1><?php the_title(); ?></h1>
+				<?php endif; ?>
+			</div>
 		</div>
 	</header>
 
-	<nav class="navbar navbar-default">
+	<nav>
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -59,21 +80,21 @@
 				<span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="navbar-collapse collapse" id="navbar">
+			<div class="mainmenu col-md-9 col-md-offset-1">
 				<?php /* Main Menu */
 					wp_nav_menu( array(
 					  'menu' => 'mainmenu',
 					  'depth' => 2,
 					  'container' => false,
-					  'menu_class' => 'nav navbar-nav',
+					  'menu_class' => 'nav nav-pills',
 					  //Process nav menu using our custom nav walker
 					  'walker' => new wp_bootstrap_navwalker())
 					);
 				?>
-				<div class="telephone col-sm-2 pull-right">
-		            <p itemprop="telephone"><a href="tel:<?php the_field('contact_phone', 'option'); ?>"><?php the_field('contact_phone', 'option'); ?></a><p>
-		        </div>
-			</div><!--/.nav-collapse -->
+			</div>
+			<div class="telephone col-md-2 pull-right">
+	            <a href="tel:<?php the_field('contact_phone', 'option'); ?>"><?php the_field('contact_phone', 'option'); ?></a>
+	        </div>
 		</div><!--/.container-fluid -->
 	</nav>
 

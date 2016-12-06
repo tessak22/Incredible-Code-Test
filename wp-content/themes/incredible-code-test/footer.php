@@ -14,9 +14,14 @@
 	</div><!-- #content -->
 
 	<footer class="site-footer" >
-		<div class="container">
-			Footer Stuff Here
-		</div><!-- .container -->
+		<div class="contact-us col-md-7">
+			<div class="contact-form col-md-5 col-md-offset-1">
+				<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact Us"]' ); ?>
+			</div>
+		</div>
+		<div class="reach-us col-md-5">
+			Some Stuff
+		</div>
 	</footer>
 
 <?php wp_footer(); ?>

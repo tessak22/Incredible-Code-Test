@@ -1,14 +1,22 @@
 /* Theme Specific CSS */
 body {font-family: 'Open Sans', sans-serif; font-size: 18px;}
 
-.site-header {padding: 50px 0 170px; background-repeat: no-repeat; background-position: top left;}
+.btn {padding: 13px 20px; width: 350px;}
+.btn:hover, .btn:focus, .btn.focus, .btn:active, .btn:visited {color: #fff;}
+.btn-primary {background: #7099b1; border-color: #7099b1; color: #fff; border-radius: 0; font-size: 1.111em; text-transform: uppercase; letter-spacing: 0.05em;}
+.btn-primary:hover {background: #5a89a5; border-color: #5a89a5; color: #fff;}
+.btn-default {background: #b88886; border-color: #b88886; color: #fff; border-radius: 0; font-size: 1.111em; text-transform: uppercase; letter-spacing: 0.05em;}
+.btn-default:hover {background: #ab7371; border-color: #ab7371; color: #fff;}
+
+
+.site-header {padding: 50px 0 100px; background-repeat: no-repeat; background-position: top left;}
 .site-header .container-fluid {position: relative;}
 /*Custom Site Headers*/
-.home .site-header {background-image: url('../images/body-bg.png'), url('../images/homepage-banner.jpg');}
+.home .site-header {background-image: url('../images/body-bg.png'), url('../images/homepage-banner.jpg'); padding: 50px 0 170px; height: 100vh;}
 /* End of Custom Site Headers */
 .logo {position: relative; left: 60px;}
-.header-contact {position: relative; right: 65px; padding-right: 0; color: #fff;}
-.header-contact:after {width: 94%; height: 1px; background-color: #fff; display: block; content: ""; position: absolute; right: 0; bottom: -40px;}
+.header-contact {padding-right: 65px; color: #fff; position: relative;}
+.header-contact:after {width: 98%; height: 1px; background-color: #fff; display: block; content: ""; position: relative; top: 38px; float: right;}
 .header-contact a {color: #fff;}
 .header-contact a:hover {color: #BAD5EB; text-decoration: none;}
 .social {list-style: none; float: right;}
@@ -25,5 +33,34 @@ body {font-family: 'Open Sans', sans-serif; font-size: 18px;}
 .header-contact p {float: right; font-size: 0.944em; letter-spacing: 0.05em; clear: right;}
 .header-contact p span {padding: 0 5px;}
 
+
+.homepage-hero {margin-right: 65px; border: 1px solid #fff; border-bottom: none; background-color: rgba(0,0,0,.40); color: #fff; text-align: center; padding: 30px 30px 40px; margin-top: 10vh; position: relative;}
+.homepage-hero h1 {font-weight: 700; font-size: 3.667em; text-transform: uppercase; letter-spacing: -0.05em; margin: 10px 0;}
+.homepage-hero h2 {color: #bdd7eb; font-weight: 300; font-size: 2.111em; text-transform: uppercase; margin: 10px 0;}
+.homepage-hero h3 {font-weight: 300; font-style: italic; font-size: 3.667em; text-transform: uppercase; margin: 10px 0 35px;}
+.homepage-hero .btn-primary {margin-right: 30px;}
+.homepage-hero .continue {position: absolute; bottom: 0; left: 0; height: 40px; width: 100%;}
+.homepage-hero .continue a {border: 2px solid #fff; border-radius: 50%; width: 40px; height: 40px; display: block; margin: 0 auto; color: #fff; position: relative; top: 18px;}
+.homepage-hero .continue:before {content: ""; background: #fff; height: 1px; width: 47.5%; display: block; position: absolute; right: 0; bottom: 0;}
+.homepage-hero .continue:after {content: ""; background: #fff; height: 1px; width: 47.5%; display: block; position: absolute; left: 0; bottom: 0;}
+
 /* Navigation */
-.telephone {background: #b88886;}
+nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099b1 50%, #b88886 50%, #b88886 85%)}
+.mainmenu {background: #7099b1;}
+.telephone {background: #b88886; padding-right: 0; font-weight: 300; letter-spacing: 0.05em; font-size: 1.667em; padding-top: 10px; text-align: center;}
+.telephone a {color: #fff;}
+.telephone a:hover {text-decoration: none;}
+.mainmenu .nav > li > a {padding: 20px 12px;}
+.nav-pills > li > a {font-size: 0.944em; background-color: transparent; color: #fff; border-radius: 0; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 300;}
+.nav > li > a:focus, .nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {background-color: #5a89a5;}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {background-color: transparent; color: #fff; font-weight: 700;}
+.dropdown-menu {background-color: #5a89a5; border: none; border-radius: 0; box-shadow: none; margin: 0;}
+.dropdown-menu > li > a {color: #fff; font-weight: 300; letter-spacing: 0.05em;}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {background-color: #7099b1; color: #fff;}
+
+
+/* Footer */
+.site-footer {}
+.contact-us {background: rgba(112,153,177,.8) no-repeat; padding-left: 30px;}
+.reach-us {background: #041428;}
+
