@@ -81,10 +81,17 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 .dropdown-menu {background-color: #5a89a5; border: none; border-radius: 0; box-shadow: none; margin: 0;}
 .dropdown-menu > li > a {color: #fff; font-weight: 300; letter-spacing: 0.05em;}
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {background-color: #7099b1; color: #fff;}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {background: #B88886;}
 
 /* General Content Area Styles */
 #content {background: #fff;}
-
+.page-title {border-bottom: 2px solid #000; padding: 80px 270px 50px; margin-bottom: 75px;}
+.page-title h2 {color: #7099b1; font-size: 2.944em;}
+.page-intro {padding: 0;}
+.page-intro p {letter-spacing: -0.01em; line-height: 1.556em;}
+.content {padding-left: 50px;}
+.content h3 {color: #6f99b2; font-size: 2.444em; margin-top: 0; margin-bottom: 50px;}
+.content-featured-image img {border: 2px solid #8a8a8a; max-width: 100%; height: auto;}
 
 /* Homepage Content */
 .homepage-intro {background: #041428 url('../images/homepage-intro-bg.png') no-repeat top right; padding-top: 125px; padding-bottom: 248px;}

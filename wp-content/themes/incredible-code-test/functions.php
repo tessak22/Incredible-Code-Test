@@ -151,3 +151,19 @@ if( function_exists('acf_add_options_page') ) {
 
 // hide admin bar on the front side of website
     add_filter('show_admin_bar', '__return_false');  
+
+// edit mce editor
+	add_filter('tiny_mce_before_init', 'incredible_editor_items');
+	function incredible_editor_items($init)
+	{
+	    // Add block format elements you want to show in dropdown
+	    $init['block_formats'] = 'Paragraph=p; Heading (h2, 30px)=h2; Sub-heading (h3, 28px)=h3; Minor Heading (h4, 22px)=h4; Minor Heading (h5, 20px)=h5; Minor Heading (h6, 20px)=h6;';
+	    // Disable unnecessary items and buttons
+	    $init['toolbar1'] = 'bold,italic,alignleft,aligncenter,alignright,bullist,numlist,outdent,indent,link,unlink'; // 'template,|,bold,italic,strikethrough,bullist,numlist,blockquote,hr,alignleft,aligncenter,alignright,link,unlink,wp_more,spellchecker,wp_fullscreen,wp_adv',
+	    $init['toolbar2'] = 'formatselect,pastetext,removeformat,charmap,superscript,undo,redo,wp_help,styleselect'; // 'formatselect,underline,alignjustify,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help',
+	    // Display the kitchen sink by default
+	    $init['wordpress_adv_hidden'] = false;
+	    // [optional] Add elements not included in standard tinyMCE dropdown
+	    //$init['extended_valid_elements'] = 'code[*]';
+	    return $init;
+	}

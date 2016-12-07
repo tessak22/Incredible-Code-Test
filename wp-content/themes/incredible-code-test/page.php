@@ -16,16 +16,21 @@ get_header(); ?>
 
 	<div class="container-fluid">
 		<div class="row">
-		    <div class="page-title col-md-12 text-center" role="main">
-		    	<h2><?php the_title(); ?></h2>
+		    <div class="page-title col-md-10 col-md-offset-1 text-center" role="main">
+		    	<h2><?php the_field('content_introduction_title'); ?></h2>
+		    	<div class="page-intro">
+		    		<?php the_field('content_introduction_text'); ?>
+		    	</div>	
 		    </div>
 		</div><!--.row-->
 	</div><!-- .container -->
 
-
 	<div class="container-fluid">
 		<div class="row">
-		    <div class="content col-md-10 col-md-offset-1" role="main">
+		    <div class="content-featured-image col-md-5 col-md-offset-1" role="main">
+		    	<?php the_post_thumbnail( 'full' ); ?>
+		    </div>
+		    <div class="content col-md-5" role="main">
 		        <?php
 		        while (have_posts()) {
 		            the_post();
