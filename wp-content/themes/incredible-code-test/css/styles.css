@@ -1,6 +1,6 @@
 /* Theme Specific CSS */
-body {font-family: 'Open Sans', sans-serif; font-size: 18px; background: #041428;}
-
+body {font-family: 'Open Sans', sans-serif; font-size: 18px; background: #041428; color: #000;}
+p {line-height: 36px;}
 h1 {font-size: 2.667em;}
 
 /* Forms & Buttons in Bootstrap */
@@ -101,7 +101,15 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 .procedure.face {background: #DBDBDD url('../images/procedure-face.jpg') no-repeat right bottom;}
 .procedure.breast {background: #E0E0E0 url('../images/procedure-breast.jpg') no-repeat;}
 .procedure.other {background: #E0E0E0 url('../images/procedure-other.jpg') no-repeat;}
-
+.homepage-gallery {background: #bdbdbd; padding: 120px 0;}
+.before-after-photos {padding-right: 0;}
+.before-photo, .after-photo {padding: 0; float: left; position: relative;}
+.before-photo {margin-right: 15px;}
+.before-after-photos h5 {background: #041428; padding: 10px 0 15px; text-transform: lowercase; color: #fff; text-align: center; font-size: 1em; margin: 0; position: absolute; bottom: 0; width: 100%;}
+.before-after-content {padding-left: 0;}
+.before-after-content h2 {font-size: 2.667em; color: #fff; margin-bottom: 40px; margin-top: -8px;}
+.before-after-content h6 {color: #fff; text-transform: uppercase; font-size: 0.889em; letter-spacing: 0.05em; margin: 43px 0 30px;}
+.before-after-content .btn-default {border: 1px solid #fff; width: 290px; padding: 9px 20px;}
 
 /* Footer */
 .site-footer {display: flex; color: #fff;}
@@ -110,17 +118,7 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 .contact-us {background-image: url('../images/contact-us-bg.jpg'); background-size: cover; background-position: center; padding-left: 30px;}
 .contact-form {padding: 85px 55px 0;}
 .contact-form h2 {font-weight: 300; font-size: 3.444em; margin-bottom: 55px; text-transform: uppercase; position: relative;}
-.contact-form h2:after {
-    position:absolute;
-    content:'';
-    display: block;
-    left:0;
-    right:0;
-    top:50%;
-    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(255,255,255,.40) 50%, rgba(255,255,255,.40) 85%);
-    height:1px;
-    min-height:1px;
-}
+.contact-form h2:after {position: absolute; content:''; display: block; left: 0; right: 0; top: 50%; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(255,255,255,.40) 50%, rgba(255,255,255,.40) 85%); height: 1px;}
 .reach-us {background: #041428; padding: 0;}
 .contact-info {text-align: center; color: #fff; padding: 35px 0 25px;}
 .site-footer .social {width: 295px; margin: 0 auto; padding-left: 0;}

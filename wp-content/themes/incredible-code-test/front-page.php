@@ -72,4 +72,29 @@ get_header(); ?>
 		</div>
 	</div>
 
+	<div class="homepage-gallery">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="before-after-photos col-md-3 col-md-offset-1">
+					<div class="row">
+						<div class="before-photo">
+							<h5>Before</h5>
+							<img src="<?php bloginfo( 'template_url' ); ?>/images/before-example.jpg">
+						</div>
+						<div class="after-photo">
+							<h5>After</h5>
+							<img src="<?php bloginfo( 'template_url' ); ?>/images/after-example.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="before-after-content col-md-6 col-md-offset-1">
+					<h2>Before and After Gallery</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<h6>VIEW OUR FULL BEFORE AND AFTER GALLERY</h6>
+					<a class="btn btn-default" href="#">See More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <?php get_footer(); ?>
