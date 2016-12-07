@@ -91,8 +91,8 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 .affiliation-logos ul {list-style: none; padding-left: 0;}
 .affiliation-logos ul li {display: inline-block;}
 .our-procedures {position: relative;}
-.our-procedures h2 {font-size: 2.667em; color: #fff; font-weight: 400; background: #b88886; display: inline-block; margin: 0; padding: 35px 220px 35px 260px; position: absolute; top: -123px; z-index: 20;}
-.our-procedures h2:after {width: 0; height: 0; border-top: 123px solid transparent; border-bottom: 0px solid transparent; border-left: 110px solid #B88886; content: ""; position: absolute; right: -110px; top: 0;}
+.our-procedures h2 {font-size: 2.667em; color: #fff; font-weight: 400; background: #b88886; display: inline-block; margin: 0; padding: 35px 220px 35px 260px; position: absolute; top: -122px; z-index: 20;}
+.our-procedures h2:after {width: 0; height: 0; border-top: 122px solid transparent; border-bottom: 0px solid transparent; border-left: 110px solid #B88886; content: ""; position: absolute; right: -110px; top: 0;}
 .procedures {display: flex;}
 .procedure {position: relative; background: #e0e0e0; padding-left: 0;}
 .procedure h4 {font-size: 1.778em; text-transform: uppercase; color: #fff; margin: 0; position: absolute; bottom: 30px; left: 15px;}
@@ -109,7 +109,18 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 .site-footer a:hover {color: #bad5eb; text-decoration: none;}
 .contact-us {background-image: url('../images/contact-us-bg.jpg'); background-size: cover; background-position: center; padding-left: 30px;}
 .contact-form {padding: 85px 55px 0;}
-.contact-form h2 {font-weight: 300; font-size: 3.444em; margin-bottom: 55px;}
+.contact-form h2 {font-weight: 300; font-size: 3.444em; margin-bottom: 55px; text-transform: uppercase; position: relative;}
+.contact-form h2:after {
+    position:absolute;
+    content:'';
+    display: block;
+    left:0;
+    right:0;
+    top:50%;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(255,255,255,.40) 50%, rgba(255,255,255,.40) 85%);
+    height:1px;
+    min-height:1px;
+}
 .reach-us {background: #041428; padding: 0;}
 .contact-info {text-align: center; color: #fff; padding: 35px 0 25px;}
 .site-footer .social {width: 295px; margin: 0 auto; padding-left: 0;}
