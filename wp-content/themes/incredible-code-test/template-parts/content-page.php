@@ -41,3 +41,6 @@
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-## -->
+
+
+ col-md-10 col-md-offset-1

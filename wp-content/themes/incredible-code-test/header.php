@@ -59,7 +59,7 @@
 							<a class="btn btn-default" href="<?php the_field('secondary_call_to_action_button_url'); ?>"><?php the_field('secondary_call_to_action_button'); ?></a>
 						<?php endif; ?>
 						<div class="continue">
-							<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/images/chevron.png"></a>
+							<a href="#content"><img src="<?php bloginfo( 'template_url' ); ?>/images/chevron.png"></a>
 						</div>
 					</div>
 				<?php endif; ?>
@@ -98,4 +98,4 @@
 		</div><!--/.container-fluid -->
 	</nav>
 
-	<div id="content" class="site-content">
+	<div id="content">
