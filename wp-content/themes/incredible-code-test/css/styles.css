@@ -4,11 +4,11 @@ p {line-height: 36px;}
 h1 {font-size: 2.667em;}
 
 /* Forms & Buttons in Bootstrap */
-.btn {padding: 13px 20px; width: 350px;}
+.btn {width: 290px; padding: 9px 20px; }
 .btn:hover, .btn:focus, .btn.focus, .btn:active, .btn:visited {color: #fff;}
-.btn-primary {background: #7099b1; border-color: #7099b1; color: #fff; border-radius: 0; font-size: 1.111em; text-transform: uppercase; letter-spacing: 0.05em;}
+.btn-primary {background: #7099b1; border-color: #7099b1; color: #fff; border-radius: 0; font-size: 0.889em; text-transform: uppercase; letter-spacing: 0.05em;}
 .btn-primary:hover {background: #5a89a5; border-color: #5a89a5; color: #fff;}
-.btn-default {background: #b88886; border-color: #b88886; color: #fff; border-radius: 0; font-size: 1.111em; text-transform: uppercase; letter-spacing: 0.05em;}
+.btn-default {background: #b88886; border-color: #b88886; color: #fff; border-radius: 0; font-size: 0.889em; text-transform: uppercase; letter-spacing: 0.05em;}
 .btn-default:hover {background: #ab7371; border-color: #ab7371; color: #fff;}
 ::-moz-placeholder {opacity: 1;}
 .form-control {background: transparent; border-color: #fff; border-radius: 0; font-size: 1.111em; color: #fff; height: 58px;}
@@ -24,14 +24,16 @@ span.Help:before {width: 0; height: 0; border-left: 14px solid transparent; bord
 select.form-control {z-index: 20;}
 .form-control-wrap {background-color: #fff;}
 
-.site-header {padding: 50px 0 100px; background-repeat: no-repeat; background-position: top left;}
+/* Site Header */
+.site-header {padding: 50px 0 100px; background-repeat: no-repeat; background-position: top left; background-image: url('../images/header-bg-page.jpg');}
 .site-header .container-fluid {position: relative;}
 /*Custom Site Headers*/
 .home .site-header {background-image: url('../images/body-bg.png'), url('../images/homepage-banner.jpg'); padding: 50px 0 170px;}
 /* End of Custom Site Headers */
 .logo {position: relative; left: 60px;}
 .header-contact {padding-right: 65px; color: #fff; position: relative;}
-.header-contact:after {width: 98%; height: 1px; background-color: #fff; display: block; content: ""; position: relative; top: 38px; float: right;}
+.header-contact:after {width: 98%; height: 1px; background-color: rgba(255,255,255,.5); display: block; content: ""; position: relative; top: 28px; float: right;}
+.home .header-contact:after {background-color: #fff;}
 .header-contact a {color: #fff;}
 .header-contact a:hover {color: #BAD5EB; text-decoration: none;}
 .site-header .social {list-style: none; float: right;}
@@ -47,13 +49,18 @@ select.form-control {z-index: 20;}
 .social li a i.fa-instagram {left: 9px;}
 .header-contact p {float: right; font-size: 0.944em; letter-spacing: 0.05em; clear: right;}
 .header-contact p span {padding: 0 5px;}
+.content-header {padding-bottom: 75px;}
+.content-header .btn-primary {margin-right: 15px;}
+.content-header h1 {font-weight: 700; font-size: 4.611em; color: #fff; letter-spacing: -0.05em; text-transform: uppercase; margin-bottom: 60px; margin-top: 40px;}
 
-
+/* Homepage Header */
 .homepage-hero {margin-right: 65px; border: 1px solid #fff; border-bottom: none; background-color: rgba(0,0,0,.40); color: #fff; text-align: center; padding: 30px 30px 40px; margin-top: 10vh; position: relative;}
 .homepage-hero h1 {font-weight: 700; font-size: 3.667em; text-transform: uppercase; letter-spacing: -0.05em; margin: 10px 0;}
 .homepage-hero h2 {color: #bdd7eb; font-weight: 300; font-size: 2.111em; text-transform: uppercase; margin: 10px 0;}
 .homepage-hero h3 {font-weight: 300; font-style: italic; font-size: 3.667em; text-transform: uppercase; margin: 10px 0 35px;}
-.homepage-hero .btn-primary {margin-right: 30px;}
+.homepage-hero .btn {width: 350px;}
+.homepage-hero .btn-primary {margin-right: 30px; padding: 13px 20px; font-size: 1.111em;}
+.homepage-hero .btn-default {font-size: 1.111em;}
 .homepage-hero .continue {position: absolute; bottom: 0; left: 0; height: 40px; width: 100%;}
 .homepage-hero .continue a {border: 2px solid #fff; border-radius: 50%; width: 40px; height: 40px; display: block; margin: 0 auto; color: #fff; position: relative; top: 18px;}
 .homepage-hero .continue a img {position: relative; left: -3px; top: -1px;}
@@ -77,6 +84,7 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 
 /* General Content Area Styles */
 #content {background: #fff;}
+
 
 /* Homepage Content */
 .homepage-intro {background: #041428 url('../images/homepage-intro-bg.png') no-repeat top right; padding-top: 125px; padding-bottom: 248px;}
@@ -109,7 +117,7 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 .before-after-content {padding-left: 0;}
 .before-after-content h2 {font-size: 2.667em; color: #fff; margin-bottom: 40px; margin-top: -8px;}
 .before-after-content h6 {color: #fff; text-transform: uppercase; font-size: 0.889em; letter-spacing: 0.05em; margin: 43px 0 30px;}
-.before-after-content .btn-default {border: 1px solid #fff; width: 290px; padding: 9px 20px;}
+.before-after-content .btn-default {border: 1px solid #fff;}
 
 /* Footer */
 .site-footer {display: flex; color: #fff;}

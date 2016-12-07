@@ -46,27 +46,39 @@
 					<p><a href="mailto:<?php the_field('contact_email', 'option'); ?>"><?php the_field('contact_email', 'option'); ?></a> <span>|</span> <a href="tel:<?php the_field('contact_phone', 'option'); ?>"><?php the_field('contact_phone', 'option'); ?></a></p>
 				</div>
 			</div>
+			<?php if(is_front_page() == true ): ?>
 			<div class="row">
-				<?php if(is_front_page() == true ): ?>
-					<div class="homepage-hero pull-right">
-						<h2>Melbourne's</h2>
-						<h1>Body Contouring</h1>
-						<h3>Specialist</h3>
-						<?php if(get_field('call_to_action_button')): ?>
-							<a class="btn btn-primary" href="<?php the_field('call_to_action_button_url'); ?>"><?php the_field('call_to_action_button'); ?></a>
-						<?php endif; ?>
-						<?php if(get_field('secondary_call_to_action_button')): ?>
-							<a class="btn btn-default" href="<?php the_field('secondary_call_to_action_button_url'); ?>"><?php the_field('secondary_call_to_action_button'); ?></a>
-						<?php endif; ?>
-						<div class="continue">
-							<a href="#content"><img src="<?php bloginfo( 'template_url' ); ?>/images/chevron.png"></a>
-						</div>
+				<div class="homepage-hero pull-right">
+					<h2>Melbourne's</h2>
+					<h1>Body Contouring</h1>
+					<h3>Specialist</h3>
+					<?php if(get_field('call_to_action_button')): ?>
+						<a class="btn btn-primary" href="<?php the_field('call_to_action_button_url'); ?>"><?php the_field('call_to_action_button'); ?></a>
+					<?php endif; ?>
+					<?php if(get_field('secondary_call_to_action_button')): ?>
+						<a class="btn btn-default" href="<?php the_field('secondary_call_to_action_button_url'); ?>"><?php the_field('secondary_call_to_action_button'); ?></a>
+					<?php endif; ?>
+					<div class="continue">
+						<a href="#content"><img src="<?php bloginfo( 'template_url' ); ?>/images/chevron.png"></a>
 					</div>
-				<?php endif; ?>
-				<?php if(is_front_page() == false ): ?>
-					<h1><?php the_title(); ?></h1>
-				<?php endif; ?>
+				</div>
 			</div>
+			<?php endif; ?>
+			<?php if(is_front_page() == false ): ?>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="content-header col-md-12 text-center">
+						<h1><?php the_title(); ?></h1>
+						<?php if(get_field('page_call_to_action_button_primary')): ?>
+		    				<a class="btn btn-primary" href="<?php the_field('page_call_to_action_button_primary_url'); ?>"><?php the_field('page_call_to_action_button_primary'); ?></a>
+		    			<?php endif; ?>
+		    			<?php if(get_field('page_call_to_action_button_secondary')): ?>
+		    				<a class="btn btn-default" href="<?php the_field('page_call_to_action_button_secondary_url'); ?>"><?php the_field('page_call_to_action_button_secondary'); ?></a>
+		    			<?php endif; ?>
+					</div>
+				</div>
+			</div>
+			<?php endif; ?>
 		</div>
 	</header>
 

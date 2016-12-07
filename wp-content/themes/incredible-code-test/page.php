@@ -16,6 +16,15 @@ get_header(); ?>
 
 	<div class="container-fluid">
 		<div class="row">
+		    <div class="page-title col-md-12 text-center" role="main">
+		    	<h2><?php the_title(); ?></h2>
+		    </div>
+		</div><!--.row-->
+	</div><!-- .container -->
+
+
+	<div class="container-fluid">
+		<div class="row">
 		    <div class="content col-md-10 col-md-offset-1" role="main">
 		        <?php
 		        while (have_posts()) {
