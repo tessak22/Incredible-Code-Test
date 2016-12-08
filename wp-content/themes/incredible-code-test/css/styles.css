@@ -4,6 +4,11 @@ p {line-height: 2.000em;}
 a {transition: all 0.2s ease 0s;}
 h1 {font-size: 2.667em;}
 
+/* Selection Text Styles */
+::-webkit-selection {background: #7099B1; color: #fff; text-shadow: none;}
+::-moz-selection 	{background: #7099B1; color: #fff; text-shadow: none;}
+::selection			{background: #7099B1; color: #fff; text-shadow: none;}
+
 /* Forms & Buttons in Bootstrap */
 .btn {width: 290px; padding: 9px 20px; transition: all 0.2s ease 0s;}
 .btn:hover, .btn:focus, .btn.focus, .btn:active, .btn:visited {color: #fff;}
