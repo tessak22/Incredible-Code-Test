@@ -30,12 +30,12 @@
 <body <?php body_class(); ?>>
 
 	<header class="site-header">
-		<div class="container-fluid">
+		<div class="relative container-fluid">
 			<div class="row">
-				<div class="logo col-md-2">
+				<div class="logo col-sm-3">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php the_field('logo', 'option'); ?>"></a>
 				</div>
-				<div class="header-contact col-md-10 pull-right">
+				<div class="header-contact col-sm-9 pull-right">
 					<ul class="social">
 						<li><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -84,28 +84,25 @@
 
 	<nav>
 		<div class="container-fluid">
-			<div class="navbar-header">
-				<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="mainmenu col-md-9 col-md-offset-1">
-				<?php /* Main Menu */
-					wp_nav_menu( array(
-					  'menu' => 'mainmenu',
-					  'depth' => 2,
-					  'container' => false,
-					  'menu_class' => 'nav nav-pills',
-					  //Process nav menu using our custom nav walker
-					  'walker' => new wp_bootstrap_navwalker())
-					);
-				?>
-			</div>
-			<div class="telephone col-md-2 pull-right">
-	            <a href="tel:<?php the_field('contact_phone', 'option'); ?>"><?php the_field('contact_phone', 'option'); ?></a>
+			<div class="row">
+				<div class="mainmenu col-md-9 col-lg-offset-1">
+					<?php /* Main Menu */
+						wp_nav_menu( array(
+						  'menu' => 'mainmenu',
+						  'depth' => 2,
+						  'container' => false,
+						  'menu_class' => 'nav nav-pills',
+						  //Process nav menu using our custom nav walker
+						  'walker' => new wp_bootstrap_navwalker())
+						);
+					?>
+				</div>
+				<div class="nav-toggle">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="telephone col-md-2 pull-right">
+		            <a href="tel:<?php the_field('contact_phone', 'option'); ?>"><?php the_field('contact_phone', 'option'); ?></a>
+		        </div>
 	        </div>
 		</div><!--/.container-fluid -->
 	</nav>

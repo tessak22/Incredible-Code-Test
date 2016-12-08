@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1767px) {
+    .mainmenu .nav > li > a {padding: 20px 8px;}
+}
+
+@media only screen and (max-width: 1670px) {
+    .mainmenu .nav > li > a {font-size: .85em;}
+}
+
+@media only screen and (max-width: 1510px) {
+    .mainmenu {margin-left: 0; width: 83.3333%;}
+}
+
+@media only screen and (max-width: 1455px) {
+    .header-contact:after {width: 95%;}
+    .contact-form h2:after {width: 30%;}
+}
+
+@media only screen and (max-width: 1360px) {
+    .telephone {display: none;}
+    .mainmenu {width: 100%;}
+}
+
+@media only screen and (max-width: 1295px) {
+    .copyright span {display: block;}
+    .contact-form h2:after {width: 15%;}
+}
+
+@media only screen and (max-width: 1199px) {
+    body {font-size: 16px;}
+    .header-contact:after {width: 85%;}
+    .below-large {display: inline-block;}
+    .homepage-hero {width: 90%;}
+    .homepage-content .btn {width: 175px;}
+    .homepage-content a.real-life img {max-width: 225px;}
+    .our-procedures h2 {padding: 35px 140px 40px 180px;}
+    .procedure .title {border-top: 170px solid transparent; border-left: 165px solid rgba(112,153,177,.85);}
+    .procedure h4 {bottom: 15px;}
+    .flex-lg-desktop {display: block;}
+    .reach-us iframe {height: 400px;}
+    .contact-form h2::after {display: none;}
+}
+
+@media only screen and (max-width: 991px) {
+    body {font-size: 14px;}
+    .btn, .btn-default, .btn-primary {width: auto;}
+    .flex-desktop {display: block;}
+    .procedure {width: 50%; float: left;}
+    .procedure .title {border-left: 200px solid rgba(112, 153, 177, 0.85); border-top: 210px solid transparent;}
+    .procedure h4 {bottom: 25px; font-size: 2.5em;}
+    .our-procedures h2:after {display: none;}
+    .our-procedures h2 {display: block; padding: 35px 0; text-align: center; width: 100%; top: -110px;}
+    .header-contact:after {display: none;}
+    .logo, .header-contact {padding: 0 15px;}
+    .homepage-hero {margin: 50px auto; float: none !important; width: 90%;}
+    .homepage-hero .btn {width: 60%; display: block; margin: 0 auto 10px;}
+    .home .site-header {padding: 50px 0;}
+    .homepage-intro {padding-top: 75px; padding-bottom: 150px;}
+    /*Responsive Menu Styles */
+    .nav-toggle {display: block; width: 100%; padding: 10px 0; color: #fff; text-align: right; cursor: pointer;}
+    .nav-toggle i {padding-right: 15px; font-size: 2em;}
+    .nav-pills > li {float: none;}
+    .mainmenu {background: #041428; z-index: 101; display: block; overflow-x: hidden; position: fixed; right: 0; top: 0; -webkit-transform: translateX(270px); -ms-transform: translateX(270px); transform: translateX(270px); width: 270px; height: 100%; padding-top: 10px; margin: 0;}
+    .nav-open {-webkit-transform: translateX(-270px); -moz-transform: translateX(-270px); -ms-transform: translateX(-270px); transform: translateX(-270px);}
+    .dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0;
+  display: block;
+  position: relative;;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+    .mainmenu .nav > li:first-child > a {padding-left: 8px;}
+    .mainmenu .nav > li > a {font-size: 1.2em; padding: 10px 8px 0;}
+    .dropdown-menu {background-color: transparent; padding-left: 25px; padding-top: 0; margin-bottom: 15px;}
+    .dropdown-menu > li > a {padding-left: 8px;}
+    .mainmenu .caret {display: none;}
+    .nav > li > a:focus, .nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {background-color: transparent; color: #7099b1;}
+
+@media only screen and (max-width: 767px) {
+    .homepage-gallery h2 {margin-top: 40px;}
+    .homepage-gallery h6 {margin: 20px 0;}
+    .flex-tablet {display: block;}
+    .homepage-gallery ul {overflow: hidden;}
+    .homepage-gallery li {float: left;}
+    .homepage-content .btn {padding: 9px 20px; width: 60%; margin-bottom: 20px;}
+    .affiliation-logos ul li {width: 50%; float: left; margin-bottom: 15px;}
+    .affiliation-logos ul li img {max-width: 100%; height: auto;}
+    .homepage-content article img.alignright {display: block; float: right; width: 100%; margin: 20px 0;}
+    .homepage-hero .continue:before, .homepage-hero .continue:after {width: 47%;}
+    .header-contact {display: none;}
+    .logo {text-align: center;}
+    .homepage-content {padding-right: 15px;}
+    .homepage-content .btn {width: 45%; margin-bottom: 0;}
+    .homepage-hero .btn {width: 75%;}
+    .homepage-hero h1 {font-size: 3.389em}
+    .homepage-hero h2 {font-size: 1.778em;}
+    .homepage-hero h3 {font-size: 3.389em;}
+}
+
+@media only screen and (max-width: 520px) {
+    .homepage-gallery li {width: 50%; margin-right: 0; border-right: 3px solid #bdbdbd;}
+    .homepage-content .btn {display: block; margin-bottom: 20px;}
+}
+
+@media only screen and (max-width: 495px) {
+    .homepage-gallery li img {max-width: 100%; height: auto;}
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-form h2 {font-size: 2.5em;}
+    span.Help:after, span.Help:before {display: none;}
+    .procedure {width: 100%;}
+    .btn, .btn-default, .btn-primary {width: 75%;}
+    .affiliation-logos ul li {width: 100%; float: none;}
+    .homepage-hero .btn {width: auto; white-space: normal;}
+    .homepage-hero .continue:before, .homepage-hero .continue:after {width: 44%;}
+    .homepage-hero h1 {font-size: 2.75em}
+    .homepage-hero h2 {font-size: 1.5em;}
+    .homepage-hero h3 {font-size: 2.75em;}
+}
+

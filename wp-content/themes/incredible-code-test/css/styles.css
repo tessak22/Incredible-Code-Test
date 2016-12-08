@@ -1,6 +1,6 @@
 /* Theme Specific CSS */
 body {font-family: 'Open Sans', sans-serif; font-size: 18px; background: #041428; color: #000;}
-p {line-height: 36px;}
+p {line-height: 2.000em;}
 h1 {font-size: 2.667em;}
 
 /* Forms & Buttons in Bootstrap */
@@ -21,18 +21,23 @@ h1 {font-size: 2.667em;}
 span.Help {display: block; width: 100%;}
 span.Help:after {height: 58px; width: 67px; content: ""; display: block; background-color: #fff; position: absolute; top: 0; right: 0;}
 span.Help:before {width: 0; height: 0; border-left: 14px solid transparent; border-right: 14px solid transparent; border-top: 18px solid #7194a9; content: ""; position: absolute; top: 20px; right: 20px; z-index: 10;}
-select.form-control {z-index: 20;}
+select.form-control {z-index: 20; border-radius: 0;}
 .form-control-wrap {background-color: #fff;}
+
+/* Generic Classes for General Use */
+.flex {display: flex;}
+.flex-lg-desktop {display: flex;}
+.flex-desktop {display: flex;}
+.flex-tablet {display: flex;}
+.relative {position: relative;}
 
 /* Site Header */
 .site-header {padding: 50px 0 100px; background-repeat: no-repeat; background-position: top left; background-image: url('../images/header-bg-page.jpg');}
-.site-header .container-fluid {position: relative;}
-/*Custom Site Headers*/
 .home .site-header {background-image: url('../images/body-bg.png'), url('../images/homepage-banner.jpg'); padding: 50px 0 170px;}
-/* End of Custom Site Headers */
-.logo {position: relative; left: 60px;}
-.header-contact {padding-right: 65px; color: #fff; position: relative;}
-.header-contact:after {width: 98%; height: 1px; background-color: rgba(255,255,255,.5); display: block; content: ""; position: relative; top: 28px; float: right;}
+.logo {position: relative; padding-left: 60px;}
+.logo img {max-width: 100%; height: auto;}
+.header-contact {padding-right: 60px; color: #fff; position: relative;}
+.header-contact:after {width: 100%; height: 1px; background-color: rgba(255,255,255,.5); display: block; content: ""; position: relative; top: 28px; float: right;}
 .home .header-contact:after {background-color: #fff;}
 .header-contact a {color: #fff;}
 .header-contact a:hover {color: #BAD5EB; text-decoration: none;}
@@ -54,12 +59,12 @@ select.form-control {z-index: 20;}
 .content-header h1 {font-weight: 700; font-size: 4.611em; color: #fff; letter-spacing: -0.05em; text-transform: uppercase; margin-bottom: 60px; margin-top: 40px;}
 
 /* Homepage Header */
-.homepage-hero {margin-right: 65px; border: 1px solid #fff; border-bottom: none; background-color: rgba(0,0,0,.40); color: #fff; text-align: center; padding: 30px 30px 40px; margin-top: 10vh; position: relative;}
+.homepage-hero {margin-right: 65px; border: 1px solid #fff; border-bottom: none; background-color: rgba(0,0,0,.40); color: #fff; text-align: center; padding: 30px 30px 40px; margin-top: 50px; position: relative;}
 .homepage-hero h1 {font-weight: 700; font-size: 3.667em; text-transform: uppercase; letter-spacing: -0.05em; margin: 10px 0;}
 .homepage-hero h2 {color: #bdd7eb; font-weight: 300; font-size: 2.111em; text-transform: uppercase; margin: 10px 0;}
 .homepage-hero h3 {font-weight: 300; font-style: italic; font-size: 3.667em; text-transform: uppercase; margin: 10px 0 35px;}
-.homepage-hero .btn {width: 350px;}
-.homepage-hero .btn-primary {margin-right: 30px; padding: 13px 20px; font-size: 1.111em;}
+.homepage-hero .btn {width: 350px; padding: 13px 20px; f}
+.homepage-hero .btn-primary {margin-right: 30px; font-size: 1.111em;}
 .homepage-hero .btn-default {font-size: 1.111em;}
 .homepage-hero .continue {position: absolute; bottom: 0; left: 0; height: 40px; width: 100%;}
 .homepage-hero .continue a {border: 2px solid #fff; border-radius: 50%; width: 40px; height: 40px; display: block; margin: 0 auto; color: #fff; position: relative; top: 18px;}
@@ -68,9 +73,10 @@ select.form-control {z-index: 20;}
 .homepage-hero .continue:after {content: ""; background: #fff; height: 1px; width: 47.5%; display: block; position: absolute; left: 0; bottom: 0;}
 
 /* Navigation */
-nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099b1 50%, #b88886 50%, #b88886 85%)}
+nav .container-fluid {background: #7099B1;}
 .mainmenu {background: #7099b1;}
-.telephone {background: #b88886; padding-right: 0; font-weight: 300; letter-spacing: 0.05em; font-size: 1.667em; padding-top: 10px; text-align: center;}
+.main-menu ul {padding-left: 0;}
+.telephone {background: #b88886; font-weight: 300; letter-spacing: 0.05em; font-size: 1.667em; padding: 11px 0; text-align: center;}
 .telephone a {color: #fff;}
 .telephone a:hover {text-decoration: none;}
 .mainmenu .nav > li > a {padding: 20px 12px;}
@@ -82,9 +88,11 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 .dropdown-menu > li > a {color: #fff; font-weight: 300; letter-spacing: 0.05em;}
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {background-color: #7099b1; color: #fff;}
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {background: #B88886;}
+.responsive-menu {display: none;}
 
 /* General Content Area Styles */
 #content {background: #fff;}
+article img {max-width: 100%; height: auto;}
 .page-title {border-bottom: 2px solid #000; padding: 80px 270px 50px; margin-bottom: 75px;}
 .page-title h2 {color: #7099b1; font-size: 2.944em;}
 .page-intro {padding: 0;}
@@ -95,48 +103,52 @@ nav .container-fluid {background-image: linear-gradient(to right, #7099b1, #7099
 
 /* Homepage Content */
 .homepage-intro {background: #041428 url('../images/homepage-intro-bg.png') no-repeat top right; padding-top: 125px; padding-bottom: 248px;}
-.homepage-row {display: flex;}
 .homepage-content {padding-right: 120px; color: #93b1c2;}
-.homepage-content .btn {padding: 9px 20px; margin-right: 30px; width: 290px;}
-.homepage-content h1 {color: #fff;}
+.homepage-content-buttons {clear: both; width: 100%;}
+.homepage-content .btn {padding: 11px 20px; margin-right: 30px; width: 290px;}
+.homepage-content a.real-life {margin-bottom: 20px;}
+.homepage-content h1 {color: #fff; margin-top: 0;}
 .homepage-content article {padding-bottom: 30px;}
+.homepage-content article img {width: 41.6667%;}
+.homepage-content article img.alignright {margin-left: 8.33333%}
 .homepage-featured-image {padding-left: 0;}
 .homepage-featured-image img {max-width: 100%; height: auto;}
 .affiliation-logos {padding-top: 55px;}
 .affiliation-logos ul {list-style: none; padding-left: 0;}
 .affiliation-logos ul li {display: inline-block;}
-.our-procedures {position: relative;}
-.our-procedures h2 {font-size: 2.667em; color: #fff; font-weight: 400; background: #b88886; display: inline-block; margin: 0; padding: 35px 220px 35px 260px; position: absolute; top: -122px; z-index: 20;}
-.our-procedures h2:after {width: 0; height: 0; border-top: 122px solid transparent; border-bottom: 0px solid transparent; border-left: 110px solid #B88886; content: ""; position: absolute; right: -110px; top: 0;}
-.procedures {display: flex;}
+.our-procedures {background: #E0E0E0; position: relative;}
+.our-procedures h2 {font-size: 2.667em; color: #fff; font-weight: 400; background: #b88886; display: inline-block; margin: 0; padding: 35px 220px 35px 260px; position: absolute; top: -122px; z-index: 20; margin-left: -15px;}
+.our-procedures h2:after {width: 0; height: 0; border-top: 122px solid transparent; border-bottom: 0px solid transparent; border-left: 110px solid #B88886; content: ""; position: absolute; right: -110px; top: 0;}*/
 .procedure {position: relative; background: #e0e0e0; padding-left: 0;}
 .procedure h4 {font-size: 1.778em; text-transform: uppercase; color: #fff; margin: 0; position: absolute; bottom: 30px; left: 15px;}
 .procedure .title {width: 0; height: 0; border-top: 205px solid transparent; border-bottom: 0px solid transparent; border-left: 206px solid rgba(112,153,177,.85); position: absolute; bottom: 0; left: 0;}
-.procedure.body {background: #E0E0E0 url('../images/procedure-body.jpg') no-repeat;}
-.procedure.face {background: #DBDBDD url('../images/procedure-face.jpg') no-repeat right bottom;}
-.procedure.breast {background: #E0E0E0 url('../images/procedure-breast.jpg') no-repeat;}
-.procedure.other {background: #E0E0E0 url('../images/procedure-other.jpg') no-repeat;}
-.homepage-gallery {background: #bdbdbd; padding: 120px 0;}
-.before-after-photos {padding-right: 0;}
-.before-photo, .after-photo {padding: 0; float: left; position: relative;}
-.before-photo {margin-right: 15px;}
-.before-after-photos h5 {background: #041428; padding: 10px 0 15px; text-transform: lowercase; color: #fff; text-align: center; font-size: 1em; margin: 0; position: absolute; bottom: 0; width: 100%;}
-.before-after-content {padding-left: 0;}
-.before-after-content h2 {font-size: 2.667em; color: #fff; margin-bottom: 40px; margin-top: -8px;}
-.before-after-content h6 {color: #fff; text-transform: uppercase; font-size: 0.889em; letter-spacing: 0.05em; margin: 43px 0 30px;}
-.before-after-content .btn-default {border: 1px solid #fff;}
+.procedure {position: relative;}
+.procedure img {max-width: 100%; height: auto;}
+.homepage-gallery {background: #bdbdbd; padding-top: 120px; padding-bottom: 120px;}
+.homepage-gallery ul {list-style: none; padding-left: 0;}
+.homepage-gallery li {display: inline-block; position: relative; margin-right: 10px;}
+.homepage-gallery h5 {background: #041428; padding: 10px 0 15px; text-transform: lowercase; color: #fff; text-align: center; font-size: 1em; margin: 0; position: absolute; bottom: 0; width: 100%;}
+.homepage-gallery h2 {font-size: 2.667em; color: #fff; margin-bottom: 40px; margin-top: -8px;}
+.homepage-gallery h6 {color: #fff; text-transform: uppercase; font-size: 0.889em; letter-spacing: 0.05em; margin: 43px 0 30px;}
+.homepage-gallery .btn-default {border: 1px solid #fff;}
 
 /* Footer */
-.site-footer {display: flex; color: #fff;}
+.site-footer {color: #fff;}
 .site-footer a {color: #fff;}
 .site-footer a:hover {color: #bad5eb; text-decoration: none;}
-.contact-us {background-image: url('../images/contact-us-bg.jpg'); background-size: cover; background-position: center; padding-left: 30px;}
+.contact-us {background-image: url('../images/contact-us-bg.jpg'); background-size: cover; background-position: center; padding-left: 30px; padding-bottom: 20px;}
 .contact-form {padding: 85px 55px 0;}
-.contact-form h2 {font-weight: 300; font-size: 3.444em; margin-bottom: 55px; text-transform: uppercase; position: relative;}
-.contact-form h2:after {position: absolute; content:''; display: block; left: 0; right: 0; top: 50%; background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(255,255,255,.40) 50%, rgba(255,255,255,.40) 85%); height: 1px;}
-.reach-us {background: #041428; padding: 0;}
+.contact-form h2 {font-weight: 300; font-size: 3.444em; margin-bottom: 55px; text-transform: uppercase; position: relative; display: block;}
+.contact-form h2:after {position: absolute; content:''; display: block; right: 0; top: 50%; background: rgba(255,255,255,.40); height: 1px; width: 35%;}
+.reach-us {background: #041428; padding-left: 0; padding-right: 0;}
+.reach-us iframe {height: 65%;}
 .contact-info {text-align: center; color: #fff; padding: 35px 0 25px;}
+.contact-info p {line-height: 2em;}
 .site-footer .social {width: 295px; margin: 0 auto; padding-left: 0;}
-.copyright {font-size: 0.667em; text-align: center; padding: 20px 0 30px;}
+.copyright {font-size: 0.667em; text-align: center; padding: 20px 15px 30px;}
+.copyright p {line-height: 1.5em;}
 .copyright span, .contact-info span {padding-right: 10px;}
+
+/* Hacks for Responsive */
+.below-large {display: none;}
 
