@@ -59,18 +59,11 @@
     .nav-toggle {display: block; width: 100%; padding: 10px 0; color: #fff; text-align: right; cursor: pointer;}
     .nav-toggle i {padding-right: 15px; font-size: 2em;}
     .nav-pills > li {float: none;}
+    .close-menu {display: block; font-size: 2em; cursor: pointer; position: absolute; right: 10px; top: 0; color: #fff; z-index: 20;}
     .mainmenu {background: #041428; z-index: 101; display: block; overflow-x: hidden; position: fixed; right: 0; top: 0; -webkit-transform: translateX(270px); -ms-transform: translateX(270px); transform: translateX(270px); width: 270px; height: 100%; padding-top: 10px; margin: 0;}
+    .mainmenu ul {margin-top: 10px;}
     .nav-open {-webkit-transform: translateX(-270px); -moz-transform: translateX(-270px); -ms-transform: translateX(-270px); transform: translateX(-270px);}
-    .dropdown-menu {
-  border: 0;
-  border-radius: 0;
-  box-shadow: 0;
-  display: block;
-  position: relative;;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+    .dropdown-menu {border: 0; border-radius: 0; box-shadow: 0; display: block; position: relative; top: 0; width: 100%; z-index: 1000;}
     .mainmenu .nav > li:first-child > a {padding-left: 8px;}
     .mainmenu .nav > li > a {font-size: 1.2em; padding: 10px 8px 0;}
     .dropdown-menu {background-color: transparent; padding-left: 25px; padding-top: 0; margin-bottom: 15px;}

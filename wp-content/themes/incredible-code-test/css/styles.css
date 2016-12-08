@@ -1,10 +1,11 @@
 /* Theme Specific CSS */
-body {font-family: 'Open Sans', sans-serif; font-size: 18px; background: #041428; color: #000;}
+body {font-family: 'Open Sans', sans-serif; font-size: 18px; background: #041428; color: #000; transition: all 0.25s cubic-bezier(0.54, 0.12, 0.2, 1) 0s;}
 p {line-height: 2.000em;}
+a {transition: all 0.2s ease 0s;}
 h1 {font-size: 2.667em;}
 
 /* Forms & Buttons in Bootstrap */
-.btn {width: 290px; padding: 9px 20px; }
+.btn {width: 290px; padding: 9px 20px; transition: all 0.2s ease 0s;}
 .btn:hover, .btn:focus, .btn.focus, .btn:active, .btn:visited {color: #fff;}
 .btn-primary {background: #7099b1; border-color: #7099b1; color: #fff; border-radius: 0; font-size: 0.889em; text-transform: uppercase; letter-spacing: 0.05em;}
 .btn-primary:hover {background: #5a89a5; border-color: #5a89a5; color: #fff;}
@@ -44,7 +45,7 @@ select.form-control {z-index: 20; border-radius: 0;}
 .site-header .social {list-style: none; float: right;}
 .social li {display: inline-block; font-size: 23px; padding: 0 6px;}
 .social li:last-child {padding-right: 0;}
-.social li a {border: 2px solid #fff; border-radius: 50%; width: 43px; height: 43px; display: block;}
+.social li a {border: 2px solid #fff; border-radius: 50%; width: 43px; height: 43px; display: block; transition: all 0.2s ease 0s;}
 .social li a:hover {border-color: #BAD5EB;}
 .social li a i {position: relative; left: 10px; top: 3px;}
 .social li a i.fa-facebook {left: 12px;}
@@ -79,7 +80,7 @@ nav .container-fluid {background: #7099B1;}
 .telephone {background: #b88886; font-weight: 300; letter-spacing: 0.05em; font-size: 1.667em; padding: 11px 0; text-align: center;}
 .telephone a {color: #fff;}
 .telephone a:hover {text-decoration: none;}
-.mainmenu .nav > li > a {padding: 20px 12px;}
+.mainmenu .nav > li > a {padding: 20px 12px; transition: all 0.2s ease 0s;}
 .mainmenu .nav > li:first-child > a {padding-left: 0;}
 .nav-pills > li > a {font-size: 0.944em; background-color: transparent; color: #fff; border-radius: 0; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 300;}
 .nav > li > a:focus, .nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {background-color: #7099B1; color: #041428;}
@@ -88,7 +89,8 @@ nav .container-fluid {background: #7099B1;}
 .dropdown-menu > li > a {color: #fff; font-weight: 300; letter-spacing: 0.05em;}
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {background-color: #7099b1; color: #fff;}
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {background: #B88886;}
-.responsive-menu {display: none;}
+.nav-toggle {display: none;}
+.close-menu {display: none;}
 
 /* General Content Area Styles */
 #content {background: #fff;}

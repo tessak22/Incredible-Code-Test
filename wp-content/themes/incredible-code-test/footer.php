@@ -51,5 +51,11 @@
         $('body').toggleClass("nav-open");
     });
 </script>
+<script type="text/javascript">
+	//add or remove nav-open class to body for off-canvas nav
+    $('.close-menu').click(function() {
+        $('body').toggleClass("nav-open");
+    });
+</script>
 </body>
 </html>

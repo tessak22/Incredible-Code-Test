@@ -86,6 +86,9 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="mainmenu col-md-9 col-lg-offset-1">
+					<div class="close-menu">
+						<i class="fa fa-window-close" aria-hidden="true"></i>
+					</div>
 					<?php /* Main Menu */
 						wp_nav_menu( array(
 						  'menu' => 'mainmenu',
